@@ -2,7 +2,7 @@
 
 ## Objective
 
-Let's practice our Rails Ajax skills in a simple, isolated setting: let's generate 4 scaffolds and ajaxify them. Test
+Let's practice our Rails Ajax skills in a simple, isolated setting: let's generate 4 scaffolds and ajaxify them.
 
 The starting point of this project is a vanilla app in which I generated our familiar movies, directors, actors, and characters as scaffolds; added sample data; and that's about it.
 
