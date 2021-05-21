@@ -1,47 +1,26 @@
-<%= form_with(model: movie) do |form| %>
-  <% if movie.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(movie.errors.count, "error") %> prohibited this movie from being saved:</h2>
+<%= form_with(model: movie, local: false) do |form| %>
 
-      <ul>
-        <% movie.errors.each do |error| %>
-          <li><%= error.full_message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= form.label :title %>
+  <td class="field">
     <%= form.text_field :title %>
-  </div>
+  </td>
 
-  <div class="field">
-    <%= form.label :description %>
+  <td class="field">
     <%= form.text_area :description %>
-  </div>
+  </td>
 
-  <div class="field">
-    <%= form.label :duration %>
+  <td class="field">
     <%= form.number_field :duration %>
-  </div>
+  </td>
 
-  <div class="field">
-    <%= form.label :image %>
-    <%= form.text_field :image %>
-  </div>
-
-  <div class="field">
-    <%= form.label :year %>
+  <td class="field">
     <%= form.number_field :year %>
-  </div>
+  </td>
 
-  <div class="field">
-    <%= form.label :director_id %>
+  <td class="field">
     <%= form.text_field :director_id %>
-  </div>
+  </td>
 
-  <div class="actions">
+  <td class="actions">
     <%= form.submit %>
-  </div>
+  </td>
 <% end %>
